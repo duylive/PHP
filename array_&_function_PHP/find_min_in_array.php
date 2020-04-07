@@ -25,7 +25,7 @@ for ($i = 0; $i < count($array); $i++) {
     }
 }
 
-echo "Giá trị lớn nhất là $min, nằm tại vị trí $index";
+echo "Giá trị nhỏ nhất là $min, nằm tại vị trí $index";
 ?>
 </body>
 </html>
