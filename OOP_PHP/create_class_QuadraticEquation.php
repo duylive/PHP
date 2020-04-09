@@ -29,15 +29,15 @@ class QuadraticEquation {
     }
 
     function get_a() {
-        echo $this -> a;
+        return $this -> a;
     }
 
     function get_b() {
-        echo $this -> b;
+        return $this -> b;
     }
 
     function get_c() {
-        echo $this -> c;
+        return $this -> c;
     }
 
 
