@@ -20,7 +20,7 @@ class StopWatch {
     }
 
     function getElapsedTime() {
-        return (strtotime($this -> endTime) - strtotime($this -> startime) * 1000);
+        return (strtotime($this -> endTime) - strtotime($this -> startTime) * 1000);
     }
 }
 function selection_sort($data)
