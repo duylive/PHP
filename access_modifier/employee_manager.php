@@ -78,13 +78,18 @@ class Manager {
 }
 
 $manager = new Manager();
-$manager -> add(new Employee("Nguyen", "Duy", "05/10", "Hanoi", "director"));
+$manager -> add(new Employee("Nguyễn", "Đức Duy", "05/10", "Hanoi", "Developer"));
 
 $employees = $manager -> getEmployees();
 foreach ($employees as $employee) {
+    echo "Họ:". " ";
     echo $employee -> getFirtsname() . "<br/>";
+    echo "Tên:". " ";
     echo $employee -> getLastname() . "<br/>";
+    echo "Ngày sinh:". " ";
     echo $employee -> getBirthday() . "<br/>";
+    echo "Địa chỉ:". " ";
     echo $employee -> getAddress() . "<br/>";
+    echo "Chức danh:". " ";
     echo $employee -> getPosition() . "<br/>";
 }
