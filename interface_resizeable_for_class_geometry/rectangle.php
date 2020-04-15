@@ -1,5 +1,6 @@
 <?php
 include_once "shape.php";
+include_once "resizeable.php";
 
 class Rectangle extends Shape implements Resizeable
 {
@@ -13,9 +14,12 @@ class Rectangle extends Shape implements Resizeable
         $this->height = $height;
     }
 
-    public function resize($rectangleOther)
+    public function resize($percent)
     {
-        $rectangleOtherArea = $rectangleOther -> getArea();
+        $currentValue = $this->width;
+        $this->width += $percent * $currentValue + $currentValue;
+        $currentValue = $this->height;
+        $this->height += $percent * $currentValue + $currentValue;
     }
 
     public function calculateArea(){

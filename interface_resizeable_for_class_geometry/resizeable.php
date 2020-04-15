@@ -1,5 +1,5 @@
 <?php
 interface Resizeable
 {
-    public function resize($objOther);
+    public function resize($percent);
 }

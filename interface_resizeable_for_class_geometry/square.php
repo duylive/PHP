@@ -9,9 +9,10 @@ class Square extends Rectangle implements Resizeable
         parent::__construct($name, $width, $width, $width);
     }
 
-    public function resize($squareOther)
+    public function resize($percent)
     {
-        $squareOtherArea = $squareOther->getArea();
+        $currentValue = $this->width;
+        $this->width += $percent * $currentValue + $currentValue;
     }
 
     public function calculateArea()
