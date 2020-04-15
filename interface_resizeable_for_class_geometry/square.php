@@ -1,6 +1,6 @@
 <?php
 
-include_once ('Rectangle.php');
+include_once ('rectangle.php');
 
 class Square extends Rectangle implements Resizeable
 {
@@ -11,7 +11,7 @@ class Square extends Rectangle implements Resizeable
 
     public function resize($squareOther)
     {
-        $squareOtherArea = $squareOther->getArea;
+        $squareOtherArea = $squareOther->getArea();
     }
 
     public function calculateArea()

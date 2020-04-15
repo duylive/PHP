@@ -1,6 +1,6 @@
 <?php
 include "shape.php";
-
+include "resizeable.php";
 class Circle extends Shape implements Resizeable
 {
     public $radius;
@@ -11,19 +11,9 @@ class Circle extends Shape implements Resizeable
         $this->radius = $radius;
     }
 
-    public function getRadius()
-    {
-        return $this->radius;
-    }
-
-    public function setRadius($radius)
-    {
-        $this->radius = $radius;
-    }
-
     public function resize($circleOther)
     {
-        $circleOtherRadius = $circleOther -> getRadius;
+        $circleOtherRadius = $circleOther -> getArea();
     }
 
     public function calculateArea(){

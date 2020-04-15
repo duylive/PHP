@@ -15,7 +15,7 @@ class Rectangle extends Shape implements Resizeable
 
     public function resize($rectangleOther)
     {
-        $rectangleOtherArea = $rectangleOther -> getArea;
+        $rectangleOtherArea = $rectangleOther -> getArea();
     }
 
     public function calculateArea(){
