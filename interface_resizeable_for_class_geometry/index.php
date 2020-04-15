@@ -44,4 +44,5 @@ echo 'Square perimeter: ' . $square->calculatePerimeter() . '<br />';
 $square -> resize(100) . "<br/>";
 echo 'Square area: ' . $square->calculateArea() . '<br />';
 echo 'Square perimeter: ' . $square->calculatePerimeter() . '<br />';
+$square ->howToColor();
 
