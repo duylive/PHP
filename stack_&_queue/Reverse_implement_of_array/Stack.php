@@ -14,7 +14,7 @@ class Stack
     function push($item)
     {
         if (!$this->isFull()) {
-            array_unshift($this->stack, $item);
+            array_push($this->stack, $item);
         } else {
             echo "Stack full";
         }
@@ -23,7 +23,7 @@ class Stack
     function pop()
     {
         if (!$this->isEmpty()) {
-            return array_shift($this->stack);
+            return array_pop($this->stack);
         } else {
             echo "stack empty";
         }
@@ -50,5 +50,9 @@ class Stack
 
     function getStack() {
         return $this->stack;
+    }
+
+    public function sort() {
+        arsort($this->stack);
     }
 }

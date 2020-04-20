@@ -14,4 +14,7 @@ $stack->push(8);
 $stack->push(9);
 $stack->push(10);
 
+$stack -> sort();
 var_dump($stack->getStack());
+
+
