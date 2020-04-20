@@ -51,8 +51,4 @@ class Stack
     function getStack() {
         return $this->stack;
     }
-
-    public function sort() {
-        arsort($this->stack);
-    }
 }

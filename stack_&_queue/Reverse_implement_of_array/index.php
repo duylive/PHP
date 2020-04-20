@@ -14,7 +14,12 @@ $stack->push(8);
 $stack->push(9);
 $stack->push(10);
 
-$stack -> sort();
-var_dump($stack->getStack());
+$arr = [];
+for ($i = 0; $i < 10; $i++) {
+    array_push($arr,$stack->pop());
+}
+echo "<pre>";
+print_r($arr);
+echo "<pre>";
 
 
