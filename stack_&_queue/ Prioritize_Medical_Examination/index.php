@@ -17,5 +17,5 @@ $queue -> enqueue($patient5);
 
 $queue -> sort();
 
-var_dump($queue);
+var_dump($queue->getQueue());
 

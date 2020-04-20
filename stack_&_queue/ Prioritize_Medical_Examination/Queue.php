@@ -29,18 +29,21 @@ class Queue
         if (count($this->queue) < $this->limit) {
             array_push($this->queue, $person);
         } else {
-            $this->dequeue();
-            array_push($this->queue, $person);
+            echo "Queue limit";
         }
     }
 
     public function dequeue() {
-        array_shift($this->queue);
+        return array_shift($this->queue);
     }
 
     public function __toString()
     {
         return implode(",", $this->queue);
+    }
+
+    public function getQueue() {
+        return $this->queue;
     }
 
     public function sort() {
