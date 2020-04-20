@@ -1,12 +1,11 @@
 <?php
 
-
 class Stack
 {
     protected $stack;
     protected $limit;
 
-    public function __construct($limit = 20)
+    public function __construct($limit = 10)
     {
         $this->limit = $limit;
         $this->stack = [];
