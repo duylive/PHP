@@ -45,10 +45,6 @@ class CountImplement
         }
     }
 
-    public function showCount() {
-        return $this->count;
-    }
-
     public function searchValue($value) {
         for ($i = 0; $i < $this->limit; $i++) {
             if ($this->numbers[$i] == $value) {
