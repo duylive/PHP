@@ -67,14 +67,14 @@ class Numbers
             if ($value < $this->numbers[$mid]) {
                 $high = $mid - 1;
                 if ($value == $this->numbers[$high]) {
-                    echo "Found it" . $this->numbers[$high] . "<br>";
+                    echo "Found it: " . $this->numbers[$high] . "<br>";
                 } else {
                     $this->searchNumber($value, $low, $high);
                 }
             } else {
                 $low = $mid + 1;
                 if ($value == $this->numbers[$low]) {
-                    echo "Found it" . $this->numbers[$low] . "<br>";
+                    echo "Found it: " . $this->numbers[$low] . "<br>";
                 } else {
                     $this->searchNumber($value, $low, $high);
                 }
