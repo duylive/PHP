@@ -14,4 +14,4 @@ function checkAccount($str)
 
 checkAccount("123abc_");
 echo "<br/>";
-checkAccount("_12345");
+checkAccount("_1234");

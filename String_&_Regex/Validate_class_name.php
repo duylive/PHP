@@ -14,5 +14,5 @@ function checkNameClass($str)
 
 checkNameClass("C0220H");
 echo "<br/>";
-checkNameClass("P0220H");
-echo "<br/>";
+checkNameClass("M0318G");
+
