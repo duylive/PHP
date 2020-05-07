@@ -77,7 +77,7 @@ class Manager {
     }
 }
 
-$manager = new Manager();
+$manager = new CarManager();
 $manager -> add(new Employee("Nguyễn", "Đức Duy", "05/10", "Hanoi", "Developer"));
 
 $employees = $manager -> getEmployees();
