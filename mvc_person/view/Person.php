@@ -15,7 +15,7 @@
         . '</td><td>' . $person->description . '</td></tr>';
     ?>
 </table>
-<a href="index.php"><<h1>Back to List</h1></a>
+<a href="index.php"><h1>Back to List</h1></a>
 
 </body>
 
