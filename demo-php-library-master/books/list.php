@@ -60,6 +60,8 @@ $books = $stmt->fetchAll();
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../auth/login.php">Log out</a>
                     </div>
                 </li>
             </ul>

@@ -39,7 +39,7 @@ session_start();
         <a href="#" id="forgot_pswd">Forgot password?</a>
         <hr>
         <!-- <p>Don't have an account!</p>  -->
-        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+        <a href="#" onclick="window.location.href='../register/index.php'"> Sign up New Account</a>
     </form>
 
     <form action="/reset/password/" class="form-reset">
