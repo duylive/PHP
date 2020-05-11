@@ -2,6 +2,7 @@
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_REQUEST['name'];
+    $_SESSION['acountname']= $name;
     $email = $_REQUEST["email"];
     $password = $_REQUEST["password"];
 

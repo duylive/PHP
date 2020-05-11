@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include_once "connectDB.php";
     // xu ly login
 
-    $sql = 'SELECT * FROM users WHERE email = ? AND password = ?';
+    $sql = 'SELECT email, password FROM users WHERE email = ? AND password = ?';
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(1, $email);
     $stmt->bindParam(2, $password);

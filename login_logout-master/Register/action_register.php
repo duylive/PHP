@@ -17,6 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute();// thực thi prepare ( cố định có)
     if ($stmt) {
         $_SESSION['isAuth'] = true;
-        header('Location:../index.php');
+        header('Location:../auth/login.php');
     }
 }
