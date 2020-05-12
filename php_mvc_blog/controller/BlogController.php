@@ -39,6 +39,13 @@ class BlogController
         include "view/list.php";
     }
 
+    public function view()
+    {
+        $id = $_GET['id'];
+        $blog = $this->blogDB->get($id);
+        include 'view/view.php';
+    }
+
     public function delete()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
@@ -54,7 +61,7 @@ class BlogController
 
     public function edit()
     {
-        if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $id = $_GET['id'];
             $blog = $this->blogDB->get($id);
             include 'view/edit.php';
@@ -62,7 +69,7 @@ class BlogController
             $id = $_POST['id'];
             $blog = new Blog($_POST['title'], $_POST['teaser'], $_POST['content'], $_POST['created']);
             $this->blogDB->update($id, $blog);
-            header ('Location: index.php');
+            header('Location: index.php');
         }
     }
 }
