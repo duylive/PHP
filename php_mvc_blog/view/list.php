@@ -23,13 +23,10 @@
         <td><?php echo ++$key ?></td>
         <td><?php echo $blog->title ?></td>
         <td><?php echo $blog->teaser ?></td>
-        <td><?php echo $blog->content ?></td>
+        <td><a href="./index.php?page=view&id=<?php echo $blog->id; ?>" class="btn btn-sm">Xem chi tiết</a></td>
         <td><?php echo $blog->created ?></td>
         <td> <a href="./index.php?page=delete&id=<?php echo $blog->id; ?>" class="btn btn-warning btn-sm">Delete</a></td>
-        <td> <a href="./index.php?page=edit&id=<?php echo $blog->id; ?>" class="btn btn-sm">Update</a>
-            <br>
-            <a href="./index.php?page=view&id=<?php echo $blog->id; ?>" class="btn btn-sm">Xem chi tiết</a>
-        </td>
+        <td> <a href="./index.php?page=edit&id=<?php echo $blog->id; ?>" class="btn btn-sm">Update</a></td>
         <?php endforeach; ?>
     </tbody>
 </table>
