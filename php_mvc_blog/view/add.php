@@ -21,7 +21,7 @@ if (isset($message)) {
                 </div>
                 <div class="form-group">
                     <label>Content</label>
-                    <input type="text" class="form-control" name="content" placeholder="Nhập nội dung" required>
+                    <input type="text" class="form-control" name="content" placeholder="Nhập nội dung (Tối đa 10.000 chữ)" required>
                 </div>
                 <div class="form-group">
                     <label>Created</label>
