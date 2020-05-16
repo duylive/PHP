@@ -8,7 +8,9 @@
 <table class="table">
     <thead>
     <tr>
+        <th style="color:red;">Numerical order</th>
         <th style="color:red;">Name</th>
+        <th style="color:red;">Image</th>
         <th style="color:orangered;">Series Numbers</th>
         <th style="color:purple;">Brand</th>
         <th style="color:yellowgreen;">Data details</th>
@@ -25,6 +27,7 @@
     <tr>
         <td><?php echo ++$key ?></td>
         <td><?php echo $gun->name ?></td>
+        <td><?php echo $gun->image ?></td>
         <td><?php echo $gun->series ?></td>
         <td><?php echo $gun->brand ?></td>
         <td><a href="./index.php?page=view&id=<?php echo $gun->id; ?>" class="btn btn-sm">Details Infomation</a></td>

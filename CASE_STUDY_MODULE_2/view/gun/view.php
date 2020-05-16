@@ -8,6 +8,8 @@
 </p>
 <h1 style="color: red">Name:  <?php echo $gun->name; ?></h1>
 <hr>
+<p style="color: #5900a6">Photos: <?php echo $gun->image; ?></p>
+<hr>
 <p style="color: #5900a6">Series Numbers: <?php echo $gun->series; ?></p>
 <hr>
 <p style="color: green">Brand: <?php echo $gun->brand; ?></p>

@@ -15,6 +15,10 @@ if (isset($message)) {
                     <input type="text" class="form-control" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group">
+                    <label>Image</label>
+                    <input type="text" class="form-control" name="image" placeholder="" required>
+                </div>
+                <div class="form-group">
                     <label>Series</label>
                     <input type="text" class="form-control" name="series" placeholder="Series Numbers" required>
                 </div>

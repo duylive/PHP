@@ -1,11 +1,15 @@
 <?php
 
 require "model/Gun.php";
+require "model/Customer.php";
 require "model/GunDB.php";
+require "model/CustomerDB.php";
 require "model/DBconnection.php";
 require "controller/GunController.php";
+require "controller/CustomerController.php";
 
 use \Controller\GunController;
+use \Controller\CustomerController;
 
 ?>
 
@@ -41,12 +45,46 @@ use \Controller\GunController;
         case 'edit':
             $controller->edit();
             break;
+        case 'searching';
+            $controller->searching();
+            break;
         default:
             $controller->index();
             break;
     }
     ?>
 </div>
+
+<div class="container">
+    <div class="navbar navbar-default">
+        <a class="navbar-brand" href="index.php"><h1>Customers management</h1></a>
+    </div>
+    <?php
+    $controller = new CustomerController();
+    $page = isset($_REQUEST['page'])? $_REQUEST['page'] : NULL;
+    switch ($page){
+        case 'add':
+            $controller->add();
+            break;
+        case 'view':
+            $controller->view();
+            break;
+        case 'delete':
+            $controller->delete();
+            break;
+        case 'edit':
+            $controller->edit();
+            break;
+        case 'searching';
+            $controller->searching();
+            break;
+        default:
+            $controller->index();
+            break;
+    }
+    ?>
+</div>
+
 
 
 </body>

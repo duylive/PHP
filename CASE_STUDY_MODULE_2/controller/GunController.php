@@ -20,9 +20,10 @@ class GunController
     public function add()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-            include 'view/add.php';
+            include 'view/gun/add.php';
         } else {
             $name = $_POST['name'];
+            $image = $_POST['image'];
             $series = $_POST['series'];
             $brand = $_POST['brand'];
             $content = $_POST['content'];
@@ -30,24 +31,24 @@ class GunController
             $price = $_POST['price'];
             $status = $_POST['status'];
             $type_id = $_POST['type_id'];
-            $gun = new Gun($name, $series, $brand, $content, $origin, $price, $status, $type_id);
+            $gun = new Gun($name, $image, $series, $brand, $content, $origin, $price, $status, $type_id);
             $this->gunDB->create($gun);
             $message = "Gun created";
-            include 'view/add.php';
+            include 'view/gun/add.php';
         }
     }
 
     public function index()
     {
         $guns = $this->gunDB->getAll();
-        include "view/list.php";
+        include "view/gun/list.php";
     }
 
     public function view()
     {
         $id = $_GET['id'];
         $gun = $this->gunDB->get($id);
-        include 'view/view.php';
+        include 'view/gun/view.php';
     }
 
     public function delete()
@@ -55,7 +56,7 @@ class GunController
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $id = $_GET['id'];
             $gun = $this->gunDB->get($id);
-            include 'view/delete.php';
+            include 'view/gun/delete.php';
         } else {
             $id = $_POST['id'];
             $this->gunDB->delete($id);
@@ -68,10 +69,10 @@ class GunController
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $id = $_GET['id'];
             $gun = $this->gunDB->get($id);
-            include 'view/edit.php';
+            include 'view/gun/edit.php';
         } else {
             $id = $_POST['id'];
-            $gun = new Gun($_POST['name'], $_POST['series'], $_POST['brand'], $_POST['content'], $_POST['origin'],$_POST['price'], $_POST['status'], $_POST['type_id']);
+            $gun = new Gun($_POST['name'], $_POST['image'], $_POST['series'], $_POST['brand'], $_POST['content'], $_POST['origin'], $_POST['price'], $_POST['status'], $_POST['type_id']);
             $this->gunDB->update($id, $gun);
             header('Location: index.php');
         }
