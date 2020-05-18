@@ -1,4 +1,3 @@
-
 <h2 style="color:green;">List of products</h2>
 <a href="./index.php?page=add">Addition a new product</a>
 <table class="table">

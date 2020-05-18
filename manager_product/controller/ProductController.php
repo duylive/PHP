@@ -76,22 +76,16 @@ class ProductController
         }
     }
 
-    public function search(){
+    public function search()
+    {
 
-        if ($_SERVER['REQUEST_METHOD']=="POST"){
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $key = $_REQUEST['key'];
             $products = $this->productDB->search($key);
         }
         include 'view/product/search.php';
 
     }
-
-
-
-
-
-
-
 
 
 }

@@ -1,4 +1,3 @@
-
 <h1>You sure ???</h1>
 
 <h3><?php echo $product->name ; ?></h3>

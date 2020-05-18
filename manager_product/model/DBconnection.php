@@ -1,8 +1,8 @@
 <?php
 
 namespace Model;
-use PDO;
 
+use PDO;
 
 class DBconnection
 {
